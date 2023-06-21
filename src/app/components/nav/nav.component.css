@@ -7,13 +7,11 @@
     width: 13rem;
     color: white;
     background: linear-gradient(180deg, rgba(1,36,82,1) 0%, rgba(18,22,27,1) 76%);
-    display: flex;
-    justify-content: center;
    
 }
 
 .img-logo-menu{
     width: 60%;
-    margin-left: 10px;
+    margin-left: 30px;
 }
 
