@@ -1,6 +1,6 @@
 .container{
     height: 100%;
-   
+    background-color: #1B2838;
 }
 
 .menu{
@@ -12,8 +12,7 @@
 .sidenav{
     width: 13rem;
     color: white;
-    background: linear-gradient(180deg, rgba(1,36,82,1) 0%, rgba(18,22,27,1) 76%);
-   
+    background: linear-gradient(180deg, rgba(27,45,65,1) 0%, rgba(23,29,37,1) 76%);
 }
 
 .img-logo-menu{
