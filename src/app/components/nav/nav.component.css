@@ -3,6 +3,12 @@
    
 }
 
+.menu{
+    position: absolute;
+    top: 0;
+    margin: 1rem;
+}
+
 .sidenav{
     width: 13rem;
     color: white;
