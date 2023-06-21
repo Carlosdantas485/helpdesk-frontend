@@ -29,13 +29,16 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
+import { ListTecnicsComponent } from './components/list-tecnics/list-tecnics.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    ListTecnicsComponent
   ],
   imports: [
     BrowserModule,
