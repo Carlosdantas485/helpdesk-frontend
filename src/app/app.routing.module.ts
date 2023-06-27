@@ -4,18 +4,16 @@ import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { ListTecnicsComponent } from './components/list-tecnics/list-tecnics.component';
 import { LoginComponent } from './components/login/login.component';
-
+import { AuthGuard } from './auth/auth.guard';
 const routes: Routes = [
+  { path: 'login', component:LoginComponent},
   {
-    path:'',component: NavComponent, children:[
+    path:'', component: NavComponent, canActivate:[AuthGuard], children:[
       {path:'home', component: HomeComponent},
-      {path:'tecnics', component: ListTecnicsComponent}
+      {path:'emplyees', component: ListTecnicsComponent}
     ]
   },
-  {
-    path: 'login',
-    component:LoginComponent
-  }
+  
 ];
 
 @NgModule({

@@ -9,6 +9,10 @@ import { Router } from '@angular/router';
 export class NavComponent {
   constructor(private router: Router){}
   ngOnInit():void{
-    this.router.navigate(['tecnics'])
+    
+  }
+
+  logOff(){
+    localStorage.clear()
   }
 }
