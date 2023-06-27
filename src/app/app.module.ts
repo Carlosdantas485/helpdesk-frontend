@@ -29,9 +29,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
-import { ListTecnicsComponent } from './components/list-tecnics/list-tecnics.component';
+import { EmployeeComponent } from './components/employee/employee.component';
+
 import { ToastrModule } from 'ngx-toastr';
 import { LoginComponent } from './components/login/login.component';
+import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 
 
 @NgModule({
@@ -40,7 +42,7 @@ import { LoginComponent } from './components/login/login.component';
     NavComponent,
     HomeComponent,
     HeaderComponent,
-    ListTecnicsComponent,
+    EmployeeComponent,
     LoginComponent
   ],
   imports: [
@@ -76,7 +78,7 @@ import { LoginComponent } from './components/login/login.component';
     )
     
   ],
-  providers: [],
+  providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

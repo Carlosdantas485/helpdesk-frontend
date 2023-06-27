@@ -5,11 +5,11 @@ import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 import { Tecnic } from 'src/app/models/tecnic';
 
 @Component({
-  selector: 'app-list-tecnics',
-  templateUrl: './list-tecnics.component.html',
-  styleUrls: ['./list-tecnics.component.css'],
+  selector: 'app-employee',
+  templateUrl: './employee.component.html',
+  styleUrls: ['./employee.component.css'],
 })
-export class ListTecnicsComponent{
+export class EmployeeComponent{
   ELEMENT_DATA: Tecnic[] = [
     {
       id: 1,
